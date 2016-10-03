@@ -18,7 +18,7 @@ public class MontyHall
 	*/
 	public static void main(String[] args)
 	{
-		int carDoor = (int) (Math.random() * 3 + 1); //random door between 1 and 3 inclusive
+		int carDoor = (int) (Math.random() * 3 + 1);//random door between 1 and 3 inclusive
 		
 		int userDoor = getUserDoor();
 		int revealed = revealDoor(carDoor, userDoor);
