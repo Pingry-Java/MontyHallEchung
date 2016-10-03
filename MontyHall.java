@@ -5,7 +5,7 @@ public class MontyHall
 	public static Scanner scan = new Scanner(System.in);
 	public static void main(String[] args)
 	{
-		int carDoor = (int) (Math.random() * 3 + 1); //random door btween 1 and 3 inclusive
+		int carDoor = (int) (Math.random() * 3 + 1); //random door between 1 and 3 inclusive
 		
 		int userDoor = getUserDoor();
 		int revealed = revealDoor(carDoor, userDoor);
@@ -20,10 +20,13 @@ public class MontyHall
 		}
 		else
 		{
-			newDoor = 3;
+			newDoor = userDoor;
 		}
 		
-		System.out.println(newDoor);
+		//System.out.println(newDoor);
+		//System.out.println(carDoor);
+		//I used the two above ^^ lines to test if the program was actually working
+		
 		if (newDoor == carDoor)
 		{
 			System.out.println("You just won a brand new car!!");
